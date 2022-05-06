@@ -1,0 +1,74 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "es2017",
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "allowJs": false,
+    "noEmit": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@c/*": [
+        "components/*"
+      ],
+      "@s/*": [
+        "components/shared/*"
+      ],
+      "@t": [
+        "constants/theme"
+      ],
+      "@h/*": [
+        "hooks/*"
+      ],
+      "@q/*": [
+        "queries/*"
+      ],
+      "@u/*": [
+        "utils/*"
+      ],
+      "@l/*": [
+        "locales/*"
+      ],
+      "@i/*": [
+        "../public/img/*"
+      ],
+      "@a": [
+        "api"
+      ],
+      "@a/client": [
+        "../gen/api-client"
+      ],
+      "@p": [
+        "constants/pages"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "src/*.ts",
+    "src/**/*.ts",
+    "src/*.tsx",
+    "src/**/*.tsx"
+  ]
+}

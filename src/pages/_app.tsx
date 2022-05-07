@@ -3,6 +3,8 @@ import Head from "next/head";
 import ThemeProvider from "@c/_app/ThemeProvider";
 import I18nProvider from "@c/_app/I18nProvider";
 
+import "../styles/global.css"
+
 export default function App({Component, pageProps}: AppProps) {
     return (
         <>

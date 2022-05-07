@@ -10,8 +10,8 @@ export default class _Document extends Document {
         return (
             <Html>
                 <Head>
-                    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet"/>
-                    <link href="http://fonts.cdnfonts.com/css/chronicle-display" rel="stylesheet"/>
+                    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet"/>
+                    <link href="https://fonts.cdnfonts.com/css/chronicle-display" rel="stylesheet"/>
                 </Head>
                 <body>
                 <Main />

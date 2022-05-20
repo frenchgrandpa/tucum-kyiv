@@ -30,7 +30,7 @@ const Navbar = styled.div`
 const NavItem = styled.div<{ active?: boolean; }>`
   font-size: 18px;
   padding: 1em;
-  line-height: 22px;
+  line-height: 1.22;
   text-decoration-line: ${p => p.active ? "underline" : ""};
   color: ${p => p.active ? "var(--accent-color)" : undefined};
   cursor: pointer;

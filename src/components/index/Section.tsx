@@ -38,13 +38,13 @@ const Title = styled.div`
   font-family: var(--title-font);
   font-weight: 300;
   font-size: 64px;
-  line-height: 77px;
+  line-height: 1.2;
   margin: 28px 0;
 `;
 
 const Text = styled.div`
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.33;
 `;
 
 const Number = styled.div`
@@ -53,7 +53,7 @@ const Number = styled.div`
   left: 0;
   opacity: 0.1;
   font-size: 240px;
-  line-height: 240px;
+  line-height: 1;
 `;
 
 const ImageWrapper = styled.div`
@@ -64,7 +64,7 @@ const ReadMore = styled.div`
   color: var(--accent-color);
   margin-top: 48px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
 `;
 
 const Section: FC<Props> = ({flip, number, preTitle, title, text, image}) => {

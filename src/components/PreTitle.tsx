@@ -21,7 +21,7 @@ const Line = styled.div`
 const Text = styled.div`
   font-weight: 800;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: 6px;
   text-transform: uppercase;
   color: var(--accent-color);

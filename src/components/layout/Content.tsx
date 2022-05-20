@@ -17,6 +17,8 @@ const _Content = styled.div`
   max-width: 1440px;
   display: flex;
   justify-content: center;
+  border: red 1px solid;
+  padding: 8px;
 `;
 
 

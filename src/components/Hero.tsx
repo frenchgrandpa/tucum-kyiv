@@ -19,8 +19,8 @@ const Container = styled.div`
 const Title = styled.div`
   font-family: var(--title-font);
   font-weight: 300;
-  font-size: 88px;
-  line-height: 100px;
+  font-size: min(10vw, 88px);
+  line-height: 1.14;
   margin: 32px 0;
 `;
 

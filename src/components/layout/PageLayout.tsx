@@ -3,8 +3,7 @@ import styled from "@emotion/styled";
 import Logo from "@c/logo";
 import Hero from "@c/Hero";
 import Main from "@c/layout/Main";
-import ContentBox from "./ContentBox";
-import Content from "./Content";
+import Content from "@c/layout/Content";
 
 
 interface Props {
@@ -91,11 +90,9 @@ const PageLayout: FC<Props> = ({children}) => {
                         </NavItem>
                     </LanguageWrapper>
                 </Header>
-                <ContentBox>
-                    <Content>
-                        <Hero/>
-                    </Content>
-                </ContentBox>
+                <Content>
+                    <Hero/>
+                </Content>
             </Background>
             <Main>
                 {children}

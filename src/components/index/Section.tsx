@@ -1,37 +1,37 @@
 import {FC} from "react";
-import Image from "next/image";
-import {GetServerSidePropsContext} from "next";
+import Image, {StaticImageData} from "next/image";
 import styled from "@emotion/styled";
-import PageLayout from "@c/layout/PageLayout";
-import ContentBox from "@c/layout/ContentBox";
-import Content from "@c/layout/Content";
 import PreTitle from "@c/PreTitle";
-import section1 from "@i/index/section1.jpg";
 import {FaArrowRight} from "react-icons/fa";
-import { useTranslations } from "next-intl";
+import {useTranslations} from "next-intl";
 
 
 interface Props {
+    flip?: boolean;
     number: string;
     preTitle: string;
     title: string;
     text: string;
+    image: StaticImageData;
 }
 
 
-const Container = styled.div`
-  position: relative;
+const Container = styled.div<{ direction: string }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 720px;
   margin-top: -48px;
+  direction: ${p => p.direction};
 `;
 
 const TextContainer = styled.div`
+  margin-top: 64px;
+  position: relative;
   max-width: 50%;
   padding-left: 150px;
+  direction: ltr;
 `;
 
 const Title = styled.div`
@@ -49,7 +49,7 @@ const Text = styled.div`
 
 const Number = styled.div`
   position: absolute;
-  top: 32px;
+  top: -100px;
   left: 0;
   opacity: 0.1;
   font-size: 240px;
@@ -60,10 +60,6 @@ const ImageWrapper = styled.div`
   height: 720px;
 `;
 
-const PreTitleWrapper = styled.div`
-  margin: 32px 0;
-`;
-
 const ReadMore = styled.div`
   color: var(--accent-color);
   margin-top: 48px;
@@ -71,19 +67,17 @@ const ReadMore = styled.div`
   line-height: 22px;
 `;
 
-const Section: FC<Props> = ({number, preTitle, title, text}) => {
+const Section: FC<Props> = ({flip, number, preTitle, title, text, image}) => {
     const t = useTranslations("index");
     return (
-        <Container>
-            <Number>
-                {number}
-            </Number>
+        <Container direction={flip ? "rtl" : "ltr"}>
             <TextContainer>
-                <PreTitleWrapper>
-                    <PreTitle>
-                        {preTitle}
-                    </PreTitle>
-                </PreTitleWrapper>
+                <Number>
+                    {number}
+                </Number>
+                <PreTitle>
+                    {preTitle}
+                </PreTitle>
                 <Title>
                     {title}
                 </Title>
@@ -98,7 +92,7 @@ const Section: FC<Props> = ({number, preTitle, title, text}) => {
             <ImageWrapper>
                 <Image
                     alt={preTitle}
-                    src={section1}
+                    src={image}
                 />
             </ImageWrapper>
         </Container>

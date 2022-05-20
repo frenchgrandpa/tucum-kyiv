@@ -6,12 +6,28 @@ interface Props {
 
 }
 
+const ContentBox = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
-const Content = styled.div`
+
+const _Content = styled.div`
   width: 100%;
   max-width: 1440px;
   display: flex;
   justify-content: center;
 `;
+
+
+const Content: FC<Props> = ({children}) => {
+    return (
+        <ContentBox>
+            <_Content>
+                {children}
+            </_Content>
+        </ContentBox>
+    );
+};
 
 export default Content;

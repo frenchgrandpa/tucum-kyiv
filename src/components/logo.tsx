@@ -9,16 +9,15 @@ interface Props {
 
 }
 
+
 const Wrapper = styled.div`
   height: 200px;
   width: 200px;
 `;
 
-
-
 const logo: FC<Props> = () => {
     return (
-        <Wrapper >
+        <Wrapper>
             <Image
                 alt={"Logo"}
                 src={img}

@@ -10,7 +10,7 @@ interface Props {
 
 
 const Container = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
   width: 950px;
 `;
 

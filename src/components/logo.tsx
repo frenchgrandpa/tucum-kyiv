@@ -11,8 +11,12 @@ interface Props {
 
 
 const Wrapper = styled.div`
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+  @media (min-width: 1024px) {
+    height: 200px;
+    width: 200px;
+  }
 `;
 
 const logo: FC<Props> = () => {

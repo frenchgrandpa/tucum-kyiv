@@ -15,16 +15,24 @@ const Page = styled.div`
 `;
 
 const Header = styled.div`
-  padding: 0 36px;
+  padding: 0 0;
   display: flex;
   justify-content: center;
+
+  @media (min-width: 1024px) {
+    padding: 0 36px;
+  }
 `;
 
 const Navbar = styled.div`
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   gap: 32px;
   height: fit-content;
+
+  @media (min-width: 1024px) {
+    margin-top: 72px;
+  }
 `;
 
 const NavItem = styled.div<{ active?: boolean; }>`
@@ -46,11 +54,15 @@ const LogoWrapper = styled.div`
 `;
 
 const LanguageWrapper = styled.div`
-  margin-top: 40px;
+  margin-top: 20px;
   height: fit-content;
   display: flex;
   flex: 1;
   justify-content: flex-end;
+
+  @media (min-width: 1024px) {
+    margin-top: 72px;
+  }
 `;
 
 const Background = styled.div`

@@ -1,5 +1,19 @@
 {
   "shared": {
-
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "classes": "Classes",
+      "contact": "Contact"
+    },
+    "lang": {
+      "en": "EN",
+      "uk": "UK"
+    },
+    "hero": {
+      "preTitle": "Capoeira Ukraine",
+      "title": "Sign Up for Capoeira Classes in Kyiv",
+      "signUp": "Sign up now"
+    }
   }
 }

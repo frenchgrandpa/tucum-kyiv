@@ -1,7 +1,7 @@
 import {FC} from "react";
 import Image, {StaticImageData} from "next/image";
 import styled from "@emotion/styled";
-import PreTitle from "@c/PreTitle";
+import PreTitle from "@s/PreTitle";
 import {FaArrowRight} from "react-icons/fa";
 import {useTranslations} from "next-intl";
 

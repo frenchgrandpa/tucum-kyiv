@@ -1,9 +1,9 @@
 import {FC} from "react";
 import {useTranslations} from "next-intl";
 import {GetServerSidePropsContext} from "next";
-import PageLayout from "@c/layout/PageLayout";
+import PageLayout from "@c/shared/layout/PageLayout";
 import Section from "@c/index/Section";
-import Content from "@c/layout/Content";
+import Content from "@c/shared/layout/Content";
 
 
 import section1 from "@i/index/section1.jpg";

@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import {FC, useEffect, useState} from "react";
 import {FaArrowDown} from "react-icons/fa";
-import PreTitle from "@c/PreTitle";
+import PreTitle from "@s/PreTitle";
+import { useTranslations } from "next-intl";
 
 
 interface Props {
@@ -28,16 +29,18 @@ const SignUp = styled.div`
 `;
 
 const Hero: FC<Props> = () => {
+    const t = useTranslations("shared.hero");
     return (
         <Container>
             <PreTitle>
-                Capoeira Ukraine
+                {t("preTitle")}
             </PreTitle>
             <Title>
-                Sign Up for Capoeira Classes in Kyiv
+                {t("title")}
+
             </Title>
             <SignUp>
-                sign up now
+                {t("signUp")}
                 <FaArrowDown style={{marginLeft: "4px", marginTop: "2px", marginBottom: "-2px"}}/>
             </SignUp>
         </Container>

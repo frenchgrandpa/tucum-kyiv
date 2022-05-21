@@ -22,7 +22,14 @@ const Background = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 1500px;
+  height: 70vh;
+  min-height: 550px;
+  max-height: 800px;
+  @media (min-width: 1024px) {
+    height: 80vh;
+    min-height: 1000px;
+    max-height: 1500px;
+  }
 `;
 
 const PageLayout: FC<Props> = ({children}) => {

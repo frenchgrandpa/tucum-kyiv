@@ -9,11 +9,18 @@ import Content from "@c/shared/layout/Content";
 import section1 from "@i/index/section1.jpg";
 import section2 from "@i/index/section2.jpg";
 import section3 from "@i/index/section3.jpg";
+import styled from "@emotion/styled";
 
 
 interface Props {
 
 }
+
+const Spacer = styled.div`
+  @media (min-width: 656px) {
+    height: min(10vw, 200px);
+  }
+`;
 
 
 const Index: FC<Props> = () => {
@@ -30,7 +37,7 @@ const Index: FC<Props> = () => {
                     image={section1}
                 />
             </Content>
-            <div style={{height: "300px"}}/>
+            <Spacer/>
             <Content>
                 <Section
                     flip
@@ -41,7 +48,7 @@ const Index: FC<Props> = () => {
                     image={section2}
                 />
             </Content>
-            <div style={{height: "300px"}}/>
+            <Spacer/>
             <Content>
                 <Section
                     number={"03"}

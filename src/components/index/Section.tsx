@@ -18,20 +18,29 @@ interface Props {
 
 const Container = styled.div<{ direction: string }>`
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  height: 720px;
-  margin-top: -48px;
+  //height: 720px;
   direction: ${p => p.direction};
+  padding: 0 8px;
+  @media (min-width: 1440px) {
+    padding: 0;
+    margin-top: -48px;
+    justify-content: space-between;
+  }
 `;
 
 const TextContainer = styled.div`
   margin-top: 64px;
   position: relative;
-  max-width: 50%;
-  padding-left: 150px;
   direction: ltr;
+  width: 570px;
+  @media (min-width: 1440px) {
+    width: 50%;
+    padding-left: 150px;
+  }
 `;
 
 const Title = styled.div`
@@ -57,7 +66,11 @@ const Number = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  height: 720px;
+  padding: 64px 48px;
+  @media (min-width: 1440px) {
+    padding: 0;
+    height: 720px;
+  }
 `;
 
 const ReadMore = styled.div`

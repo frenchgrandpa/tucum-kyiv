@@ -4,17 +4,20 @@ import {GetServerSidePropsContext} from "next";
 import PageLayout from "@c/shared/layout/PageLayout";
 import Section from "@s/section/Section";
 import Content from "@c/shared/layout/Content";
-
-
-import section1 from "@i/index/section1.jpg";
-import section2 from "@i/index/section2.jpg";
-import section3 from "@i/index/section3.jpg";
 import styled from "@emotion/styled";
+import SectionTitle from "@s/section/SectionTitle";
+import SectionText from "@s/section/SectionText";
+import Image from "next/image";
+
+import what from "@i/about/what.png";
+import team from "@i/about/team.png";
+import suitable from "@i/about/suitable.jpg";
 
 
 interface Props {
 
 }
+
 
 const Spacer = styled.div`
   @media (min-width: 656px) {
@@ -22,6 +25,9 @@ const Spacer = styled.div`
   }
 `;
 
+const SuitableImageWrapper = styled.div`
+  margin: 24px 0;
+`;
 
 const About: FC<Props> = () => {
     const t = useTranslations("about");
@@ -29,34 +35,42 @@ const About: FC<Props> = () => {
     return (
         <PageLayout>
             <Content>
-                <Section
-                    number={"01"}
-                    preTitle={t("about.preTitle")}
-                    title={t("about.title")}
-                    text={t("about.text")}
-                    image={section1}
-                />
+                <Section flip image={what} noPadding>
+                    <SectionTitle>
+                        {t("what.title")}
+                    </SectionTitle>
+                    <SectionText>
+                        {t("what.text")}
+                    </SectionText>
+                </Section>
             </Content>
             <Spacer/>
             <Content>
-                <Section
-                    flip
-                    number={"02"}
-                    preTitle={t("classes.preTitle")}
-                    title={t("classes.title")}
-                    text={t("classes.text")}
-                    image={section2}
-                />
+                <Section image={team} noPadding>
+                    <SectionTitle>
+                        {t("team.title")}
+                    </SectionTitle>
+                    <SectionText>
+                        {t.rich("team.text", {p: (c) => <p>{c}</p>})}
+                    </SectionText>
+                </Section>
             </Content>
             <Spacer/>
             <Content>
-                <Section
-                    number={"03"}
-                    preTitle={t("contact.preTitle")}
-                    title={t("contact.title")}
-                    text={t("contact.text")}
-                    image={section3}
-                />
+                <div>
+                    <SectionTitle>
+                        {t("suitable.title")}
+                    </SectionTitle>
+                    <SectionText>
+                        {t("suitable.text")}
+                    </SectionText>
+                    <SuitableImageWrapper>
+                        <Image
+                            alt={"Video"}
+                            src={suitable}
+                        />
+                    </SuitableImageWrapper>
+                </div>
             </Content>
         </PageLayout>
     );

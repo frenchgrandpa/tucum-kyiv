@@ -18,7 +18,7 @@ const _Content = styled.div`
   display: flex;
   justify-content: center;
   //border: red 1px solid;
-  padding: 8px;
+  padding: 16px;
 `;
 
 

@@ -18,7 +18,11 @@ const _Content = styled.div`
   display: flex;
   justify-content: center;
   //border: red 1px solid;
-  padding: 16px;
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 128px;
+  }
 `;
 
 

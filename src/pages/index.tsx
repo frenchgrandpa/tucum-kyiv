@@ -9,7 +9,7 @@ import section1 from "@i/index/section1.jpg";
 import section2 from "@i/index/section2.jpg";
 import section3 from "@i/index/section3.jpg";
 import styled from "@emotion/styled";
-import IndexSection from "@s/section/IndexSection";
+import IndexSection from "@c/index/IndexSection";
 
 
 interface Props {

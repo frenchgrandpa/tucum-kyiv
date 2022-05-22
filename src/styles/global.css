@@ -9,4 +9,5 @@ html, body, div, span {
 :root {
     --accent-color: #FBD784;
     --title-font: 'Chronicle Display', serif;
+    --slim-font: 'Gilroy-Regular', sans-serif;
 }

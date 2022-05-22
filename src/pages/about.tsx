@@ -12,6 +12,8 @@ import Image from "next/image";
 import what from "@i/about/what.png";
 import team from "@i/about/team.png";
 import suitable from "@i/about/suitable.jpg";
+import Suitable from "@c/about/Suitable";
+import Testimonials from "@c/about/Testimonials";
 
 
 interface Props {
@@ -25,9 +27,7 @@ const Spacer = styled.div`
   }
 `;
 
-const SuitableImageWrapper = styled.div`
-  margin: 24px 0;
-`;
+
 
 const About: FC<Props> = () => {
     const t = useTranslations("about");
@@ -57,20 +57,10 @@ const About: FC<Props> = () => {
             </Content>
             <Spacer/>
             <Content>
-                <div>
-                    <SectionTitle>
-                        {t("suitable.title")}
-                    </SectionTitle>
-                    <SectionText>
-                        {t("suitable.text")}
-                    </SectionText>
-                    <SuitableImageWrapper>
-                        <Image
-                            alt={"Video"}
-                            src={suitable}
-                        />
-                    </SuitableImageWrapper>
-                </div>
+                <Suitable/>
+            </Content>
+            <Content>
+                <Testimonials/>
             </Content>
         </PageLayout>
     );

@@ -10,6 +10,7 @@ import section2 from "@i/index/section2.jpg";
 import section3 from "@i/index/section3.jpg";
 import styled from "@emotion/styled";
 import IndexSection from "@c/index/IndexSection";
+import {ABOUT, CLASSES, CONTACT} from "../Pages";
 
 
 interface Props {
@@ -35,6 +36,7 @@ const Index: FC<Props> = () => {
                     title={t("about.title")}
                     text={t("about.text")}
                     image={section1}
+                    href={ABOUT}
                 >
                 </IndexSection>
             </Content>
@@ -47,6 +49,7 @@ const Index: FC<Props> = () => {
                     title={t("classes.title")}
                     text={t("classes.text")}
                     image={section2}
+                    href={CLASSES}
                 />
             </Content>
             <Spacer/>
@@ -57,6 +60,7 @@ const Index: FC<Props> = () => {
                     title={t("contact.title")}
                     text={t("contact.text")}
                     image={section3}
+                    href={CONTACT}
                 />
             </Content>
         </PageLayout>

@@ -5,17 +5,16 @@ import PageLayout from "@c/shared/layout/PageLayout";
 import Section from "@s/section/Section";
 import Content from "@c/shared/layout/Content";
 
+
 import section1 from "@i/index/section1.jpg";
 import section2 from "@i/index/section2.jpg";
 import section3 from "@i/index/section3.jpg";
 import styled from "@emotion/styled";
-import IndexSection from "@s/section/IndexSection";
 
 
 interface Props {
 
 }
-
 
 const Spacer = styled.div`
   @media (min-width: 656px) {
@@ -23,24 +22,24 @@ const Spacer = styled.div`
   }
 `;
 
-const Index: FC<Props> = () => {
-    const t = useTranslations("index");
+
+const About: FC<Props> = () => {
+    const t = useTranslations("about");
 
     return (
         <PageLayout>
             <Content>
-                <IndexSection
+                <Section
                     number={"01"}
                     preTitle={t("about.preTitle")}
                     title={t("about.title")}
                     text={t("about.text")}
                     image={section1}
-                >
-                </IndexSection>
+                />
             </Content>
             <Spacer/>
             <Content>
-                <IndexSection
+                <Section
                     flip
                     number={"02"}
                     preTitle={t("classes.preTitle")}
@@ -51,7 +50,7 @@ const Index: FC<Props> = () => {
             </Content>
             <Spacer/>
             <Content>
-                <IndexSection
+                <Section
                     number={"03"}
                     preTitle={t("contact.preTitle")}
                     title={t("contact.title")}
@@ -63,7 +62,7 @@ const Index: FC<Props> = () => {
     );
 };
 
-export default Index;
+export default About;
 
 
 
@@ -72,7 +71,7 @@ export async function getServerSideProps({locale}: GetServerSidePropsContext) {
         props: {
             locales: {
                 ...await import(`@l/shared/${locale}.json`),
-                ...await import(`@l/index/${locale}.json`)
+                ...await import(`@l/about/${locale}.json`)
             }
         }
     };

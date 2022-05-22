@@ -5,8 +5,6 @@ import Navbar from "@s/header/Navbar";
 import LanguageSelector from "@s/header/LanguageSelector";
 import MobileMenuButton from "@s/header/MobileMenuButton";
 import MobileMenu from "@s/MobileMenu";
-import HideOnMobile from "@s/layout/HideOnMobile";
-import HideOnDesktop from "@s/layout/HideOnDesktop";
 
 
 interface Props {
@@ -36,15 +34,9 @@ const Header: FC<Props> = () => {
             <LogoWrapper>
                 <Logo/>
             </LogoWrapper>
-            <HideOnMobile>
-                <Navbar/>
-            </HideOnMobile>
-            <HideOnMobile>
-                <LanguageSelector/>
-            </HideOnMobile>
-            <HideOnDesktop>
-                <MobileMenuButton/>
-            </HideOnDesktop>
+            <Navbar/>
+            <LanguageSelector/>
+            <MobileMenuButton/>
             <MobileMenu/>
         </Container>
     );

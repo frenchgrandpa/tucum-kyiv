@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import Logo from "@s/header/logo";
 import {useTranslations} from "next-intl";
 import NavItems from "@s/header/NavItems";
+import HideOnMobile from "@s/layout/HideOnMobile";
 
 
 interface Props {
@@ -23,9 +24,11 @@ const Container = styled.div`
 
 const Navbar: FC<Props> = () => {
     return (
-        <Container>
-           <NavItems/>
-        </Container>
+        <HideOnMobile>
+            <Container>
+                <NavItems/>
+            </Container>
+        </HideOnMobile>
     );
 };
 

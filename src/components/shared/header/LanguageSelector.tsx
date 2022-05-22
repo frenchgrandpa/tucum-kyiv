@@ -2,6 +2,7 @@ import {FC, useState, useEffect} from "react";
 import styled from "@emotion/styled";
 import {useTranslations} from "next-intl";
 import {NavItem} from "@s/header/NavItems";
+import HideOnMobile from "@s/layout/HideOnMobile";
 
 
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
 }
 
 
-const LanguageWrapper = styled.div`
+const LanguageWrapper = styled(HideOnMobile)`
   margin-top: 20px;
   height: fit-content;
   display: flex;

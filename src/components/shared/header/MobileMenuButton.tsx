@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 
 import {FaBars} from "react-icons/fa";
 import {MobileMenuContext} from "../MobileMenuContextProvider";
+import HideOnDesktop from "@s/layout/HideOnDesktop";
 
 
 interface Props {
@@ -20,9 +21,11 @@ const Button = styled.div`
 const MobileMenuButton: FC<Props> = () => {
     const {toggleShow} = useContext(MobileMenuContext);
     return (
-        <Button onClick={() => toggleShow()}>
-            <FaBars style={{fontSize: "48px"}}/>
-        </Button>
+        <HideOnDesktop>
+            <Button onClick={() => toggleShow()}>
+                <FaBars style={{fontSize: "48px"}}/>
+            </Button>
+        </HideOnDesktop>
     );
 };
 

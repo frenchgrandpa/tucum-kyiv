@@ -7,6 +7,7 @@ import SectionTitle from "@s/section/SectionTitle";
 import SectionText from "@s/section/SectionText";
 import {useTranslations} from "next-intl";
 import {FaArrowRight} from "react-icons/fa";
+import Link from "next/link";
 
 
 interface Props {
@@ -16,6 +17,7 @@ interface Props {
     title: string;
     text: string;
     image: StaticImageData;
+    href: string;
 }
 
 
@@ -27,14 +29,15 @@ const Number = styled.div`
   font-size: 240px;
   line-height: 1;
 `;
-const ReadMore = styled.div`
+const ReadMore = styled.a`
+  display: block;
   color: var(--accent-color);
   margin-top: 48px;
   font-size: 18px;
   line-height: 1.22;
 `;
 
-const IndexSection: FC<Props> = ({flip, number, preTitle, title, text, image}) => {
+const IndexSection: FC<Props> = ({flip, number, preTitle, title, text, image, href}) => {
     const t = useTranslations("index");
     return (
         <Section
@@ -53,10 +56,12 @@ const IndexSection: FC<Props> = ({flip, number, preTitle, title, text, image}) =
             <SectionText>
                 {text}
             </SectionText>
-            <ReadMore>
-                {t("readMore")}
-                <FaArrowRight style={{marginLeft: "16px", marginBottom: "-3px"}}/>
-            </ReadMore>
+            <Link href={href}>
+                <ReadMore>
+                    {t("readMore")}
+                    <FaArrowRight style={{marginLeft: "16px", marginBottom: "-3px"}}/>
+                </ReadMore>
+            </Link>
         </Section>
     );
 };

@@ -13,12 +13,17 @@ interface Props {
 
 const FaqContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 32px;
   width: 100%;
   justify-content: center;
-  background: #23343C;
-  padding: 64px;
+  background: #23343C80;
+  padding: 16px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    padding: 64px;
+  }
 `;
 
 

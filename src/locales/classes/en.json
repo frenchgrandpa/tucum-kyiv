@@ -3,6 +3,25 @@
     "schedule": {
       "title": "Class Schedule",
       "group": "Group"
+    },
+    "faq": {
+      "title": "Class-Related FAQs",
+      "1": {
+        "title": "Do I need previous martial arts experience?",
+        "text": "No, our school is welcoming both beginners and more advanced students."
+      },
+      "2": {
+        "title": "Is it suitable for both kids and adults?",
+        "text": "Yes, we have different kids classes (various age groups also) and the adults train with us as well."
+      },
+      "3": {
+        "title": "What do I need to bring with me for the first class?",
+        "text": "Normally we train in white pants that are called “abada” and a comfortable t-shirt. However, you can use whatever sports clothes you prefer. We also train barefoot. "
+      },
+      "4": {
+        "title": "Do you have any events besides regular trainings?",
+        "text": "Yes, we do our best to make capoeira community as interesting as possible. Therefore, we organise training camps, seminars, bonding activities and much more!"
+      }
     }
   }
 }

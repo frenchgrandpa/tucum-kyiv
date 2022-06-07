@@ -14,19 +14,12 @@ import team from "@i/about/team.png";
 import suitable from "@i/about/suitable.jpg";
 import Suitable from "@c/about/Suitable";
 import Testimonials from "@c/about/Testimonials";
+import {Spacer} from "@s/layout/Spacer";
 
 
 interface Props {
 
 }
-
-
-const Spacer = styled.div`
-  @media (min-width: 656px) {
-    height: min(10vw, 200px);
-  }
-`;
-
 
 
 const About: FC<Props> = () => {

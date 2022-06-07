@@ -10,5 +10,3 @@ dayjs.extend(duration);
 dayjs.extend(utc);
 dayjs.extend(timezone);
 dayjs.extend(isBetween);
-
-//Update locales here and in next.config.js

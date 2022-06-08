@@ -14,6 +14,31 @@
       "preTitle": "Capoeira Ukraine",
       "title": "Sign Up for Capoeira Classes in Kyiv",
       "signUp": "Sign up now"
+    },
+    "contact": {
+      "title": "Sign up for a trial class",
+      "firstName": {
+        "label": "First Name",
+        "placeholder": "Enter first name"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Enter last name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter email"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "Enter phone number"
+      },
+      "experience": {
+        "title": "Your experience in capoeira",
+        "new": "Newbie",
+        "years": "years"
+      },
+      "submit": "Submit"
     }
   }
 }

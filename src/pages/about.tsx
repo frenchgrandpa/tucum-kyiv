@@ -15,6 +15,7 @@ import suitable from "@i/about/suitable.jpg";
 import Suitable from "@c/about/Suitable";
 import Testimonials from "@c/about/Testimonials";
 import {Spacer} from "@s/layout/Spacer";
+import FormSection from "@s/contactForm/FormSection";
 
 
 interface Props {
@@ -55,6 +56,7 @@ const About: FC<Props> = () => {
             <Content>
                 <Testimonials/>
             </Content>
+            <FormSection/>
         </PageLayout>
     );
 };

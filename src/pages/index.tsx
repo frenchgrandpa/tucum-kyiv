@@ -11,6 +11,7 @@ import section3 from "@i/index/section3.jpg";
 import styled from "@emotion/styled";
 import IndexSection from "@c/index/IndexSection";
 import {ABOUT, CLASSES, CONTACT} from "../Pages";
+import FormSection from "@s/contactForm/FormSection";
 
 
 interface Props {
@@ -63,6 +64,7 @@ const Index: FC<Props> = () => {
                     href={CONTACT}
                 />
             </Content>
+            <FormSection/>
         </PageLayout>
     );
 };

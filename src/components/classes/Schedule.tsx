@@ -1,13 +1,14 @@
 import {FC} from "react";
 import styled from "@emotion/styled";
 import SectionTitle from "@s/section/SectionTitle";
-import { useTranslations } from "next-intl";
+import {useTranslations} from "next-intl";
 import Day from "@c/classes/Day";
 
 
 interface Props {
 
 }
+
 
 const DayContainer = styled.div`
   display: flex;

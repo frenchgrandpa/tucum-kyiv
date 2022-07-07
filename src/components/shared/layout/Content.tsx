@@ -6,11 +6,11 @@ interface Props {
 
 }
 
+
 const ContentBox = styled.div`
   display: flex;
   justify-content: center;
 `;
-
 
 const _Content = styled.div`
   width: 100%;
@@ -24,7 +24,6 @@ const _Content = styled.div`
     padding: 0 128px;
   }
 `;
-
 
 const Content: FC<Props> = ({children}) => {
     return (

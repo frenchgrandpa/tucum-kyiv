@@ -23,7 +23,7 @@ const Container = styled.div<{ direction: string }>`
   }
 `;
 
-const TextContainer = styled.div<{noPadding?: boolean}>`
+const TextContainer = styled.div<{ noPadding?: boolean }>`
   margin-top: 64px;
   position: relative;
   direction: ltr;

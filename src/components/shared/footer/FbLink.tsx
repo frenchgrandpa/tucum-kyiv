@@ -14,7 +14,6 @@ const Wrapper = styled.a`
   cursor: pointer;
 `;
 
-
 const FbLink: FC<Props> = () => {
     return (
         <Wrapper target="_blank" href={"https://www.facebook.com/UkrCentreCapoeira/"}>

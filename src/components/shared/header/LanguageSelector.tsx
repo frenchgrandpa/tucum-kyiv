@@ -65,8 +65,8 @@ const LanguageSelector: FC<Props> = () => {
                 <DropdownContainer show={show}>
                     {locales!.map(l => (
                         <Locale onClick={() => {
-                            router.push({ pathname, query }, asPath, { locale: l })
-                            setShow(false)
+                            router.push({pathname, query}, asPath, {locale: l});
+                            setShow(false);
                         }}>
                             {t(l)}
                         </Locale>

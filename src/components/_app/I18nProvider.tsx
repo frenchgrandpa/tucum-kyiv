@@ -4,12 +4,11 @@ import {NextIntlProvider} from "next-intl";
 import "./dayjs";
 
 import "dayjs/locale/en";
-import "dayjs/locale/uk";//uk = ua
+import "dayjs/locale/uk"; //uk = ua
 import "dayjs/locale/ru";
 
+
 //Update locales here and in next.config.js
-
-
 
 interface Props {
     locales: any;

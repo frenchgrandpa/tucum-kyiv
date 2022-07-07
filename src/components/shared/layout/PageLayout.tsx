@@ -13,8 +13,6 @@ interface Props {
 }
 
 
-
-
 const Background = styled.div`
   background-size: cover;
   background-image: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%), url("${require("@i/bg.webp").default.src}");

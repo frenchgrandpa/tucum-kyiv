@@ -1,6 +1,6 @@
 // noinspection HtmlRequiredTitleElement
 
-import Document,{ Html, Head, Main, NextScript } from "next/document";
+import Document, {Head, Html, Main, NextScript} from "next/document";
 import {createGetInitialProps} from "@mantine/next";
 
 const getInitialProps = createGetInitialProps();
@@ -8,7 +8,9 @@ const getInitialProps = createGetInitialProps();
 export default class _Document extends Document {
     static getInitialProps = getInitialProps;
 
-    render(){
+
+
+    render() {
         return (
             <Html>
                 <Head>
@@ -16,10 +18,10 @@ export default class _Document extends Document {
                     <link href="https://fonts.cdnfonts.com/css/chronicle-display" rel="stylesheet"/>
                 </Head>
                 <body>
-                <Main />
-                <NextScript />
+                <Main/>
+                <NextScript/>
                 </body>
             </Html>
-        )
+        );
     }
 }

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import {FC} from "react";
 import {FaArrowDown} from "react-icons/fa";
 import PreTitle from "@s/PreTitle";
-import { useTranslations } from "next-intl";
+import {useTranslations} from "next-intl";
 
 
 interface Props {
@@ -14,8 +14,6 @@ const Container = styled.div`
   margin-top: 100px;
   width: 950px;
 `;
-
-
 
 const Title = styled.div`
   font-family: var(--title-font);

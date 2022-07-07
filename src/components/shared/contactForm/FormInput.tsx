@@ -31,7 +31,7 @@ const Input = styled.input`
   color: #D8D8D8;
   height: 100px;
   padding-left: 36px;
-  
+
 `;
 
 const FormInput: FC<Props> = ({name, placeholder, type, label}) => {

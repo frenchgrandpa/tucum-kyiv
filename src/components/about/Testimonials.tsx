@@ -18,7 +18,6 @@ const Container = styled.div`
   width: 100%;
 `;
 
-
 const Divider = styled.div`
   width: 100%;
   mix-blend-mode: normal;
@@ -27,7 +26,6 @@ const Divider = styled.div`
   margin-top: 36px;
   margin-bottom: 72px;
 `;
-
 
 const TestimonialContainer = styled.div`
   width: 100%;
@@ -68,8 +66,6 @@ const TestimonialName = styled.div`
     color: var(--accent-color);
   }
 `;
-
-
 
 const Testimonials: FC<Props> = () => {
     const t = useTranslations("about.testimonials");

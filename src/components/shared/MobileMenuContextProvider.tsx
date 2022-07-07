@@ -1,16 +1,16 @@
-import {FC, useState, createContext} from "react";
+import {createContext, FC, useState} from "react";
 
 
 interface Props {
 
 }
 
+
 export const MobileMenuContext = createContext({
     show: false,
     toggleShow: () => {
     }
 });
-
 
 const MobileMenuContextProvider: FC<Props> = ({children}) => {
     const [show, setShow] = useState(false);

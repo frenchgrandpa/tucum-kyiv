@@ -14,7 +14,6 @@ const Container = styled.div`
   width: 320px;
 `;
 
-
 const GroupContainer = styled.div`
   padding: 16px 32px
 `;

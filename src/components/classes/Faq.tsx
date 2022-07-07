@@ -25,7 +25,6 @@ const FaqContainer = styled.div`
   }
 `;
 
-
 const Faq: FC<Props> = () => {
     const t = useTranslations("classes.faq");
     return (

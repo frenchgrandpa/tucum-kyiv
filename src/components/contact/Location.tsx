@@ -1,17 +1,18 @@
 import {FC} from "react";
 import styled from "@emotion/styled";
 import SectionTitle from "@s/section/SectionTitle";
-import { useTranslations } from "next-intl";
+import {useTranslations} from "next-intl";
 
 
 interface Props {
 
 }
+
+
 const Directions = styled.div`
   margin-top: 48px;
   font-family: var(--slim-font);
 `;
-
 
 const Location: FC<Props> = () => {
     const t = useTranslations("contact");

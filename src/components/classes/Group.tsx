@@ -1,7 +1,7 @@
 import {FC} from "react";
 import styled from "@emotion/styled";
 import {Dayjs} from "dayjs";
-import { useTranslations } from "next-intl";
+import {useTranslations} from "next-intl";
 
 
 interface Props {
@@ -14,8 +14,6 @@ export type GroupData = {
     from: Dayjs,
     to: Dayjs
 }
-
-
 
 const Container = styled.div`
   display: flex;

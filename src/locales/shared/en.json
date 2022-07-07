@@ -8,7 +8,8 @@
     },
     "lang": {
       "en": "EN",
-      "uk": "UK"
+      "uk": "Ук",
+      "ru": "Ро"
     },
     "hero": {
       "preTitle": "Capoeira Ukraine",
@@ -39,6 +40,11 @@
         "years": "years"
       },
       "submit": "Submit"
+    },
+    "footer": {
+      "menu": "Menu",
+      "address": "Our address",
+      "follow": "Follow us on social media"
     }
   }
 }

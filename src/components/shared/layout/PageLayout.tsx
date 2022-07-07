@@ -6,6 +6,7 @@ import Content from "@s/layout/Content";
 import Header from "@s/header/Header";
 import MobileMenu from "../MobileMenu";
 import MobileMenuContextProvider from "@s/MobileMenuContextProvider";
+import Footer from "../footer/Footer";
 
 
 interface Props {
@@ -13,8 +14,7 @@ interface Props {
 }
 
 
-const Page = styled.div`
-`;
+
 
 const Background = styled.div`
   background-size: cover;
@@ -35,7 +35,7 @@ const Background = styled.div`
 const PageLayout: FC<Props> = ({children}) => {
     return (
         <MobileMenuContextProvider>
-            <Page>
+            <div>
                 <Background>
                     <Header/>
                     <Content>
@@ -45,7 +45,8 @@ const PageLayout: FC<Props> = ({children}) => {
                 <Main>
                     {children}
                 </Main>
-            </Page>
+                <Footer/>
+            </div>
         </MobileMenuContextProvider>
     );
 };

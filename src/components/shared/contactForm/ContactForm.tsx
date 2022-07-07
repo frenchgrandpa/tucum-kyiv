@@ -37,6 +37,13 @@ const Submit = styled.button`
   width: 236px;
   font-size: 32px;
   display: block;
+  height: 110px;
+
+  :hover {
+    color: #23343C;
+    background: var(--accent-color);
+    text-decoration-line: underline;
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -46,13 +53,13 @@ const ButtonWrapper = styled.div`
 `;
 
 const Radio = styled.input`
-  margin-left: 24px;
+  margin-right: 8px;
 `;
 
 const ContactForm: FC<Props> = () => {
     const t = useTranslations("shared.contact");
     return (
-        <div style={{width: "100%"}}>
+        <div style={{width: "100%", marginBottom: "36px"}}>
             <SectionTitle>
                 {t("title")}
             </SectionTitle>
@@ -62,16 +69,13 @@ const ContactForm: FC<Props> = () => {
                 <FormInput name={"email"} label={t("email.label")} placeholder={t("email.placeholder")} type={"email"}/>
                 <FormInput name={"phone"} label={t("phone.label")} placeholder={t("phone.placeholder")} type={"phone"}/>
                 <div>
-                    <Label>
-                        {t("experience.title")}
-                    </Label>
-                    <Radio type={"radio"} name={"experience"} value={"new"} id={"exp-new"} required
-                           style={{marginLeft: 32}}/>
-                    <label htmlFor="exp-new">{t("experience.new")}</label>
+                    <Label>{t("experience.title")}</Label>
+                    <Radio type={"radio"} name={"experience"} value={"new"} id={"exp-new"} required/>
+                    <label htmlFor="exp-new">{t("experience.new")}</label><br/>
                     <Radio type={"radio"} name={"experience"} value={"1-3"} id={"exp-1-3"} required/>
-                    <label htmlFor="exp-1-3">{"1-3 "}{t("experience.years")}</label>
+                    <label htmlFor="exp-1-3">{"1-3 "}{t("experience.years")}</label><br/>
                     <Radio type={"radio"} name={"experience"} value={"3-5"} id={"exp-3-5"} required/>
-                    <label htmlFor="exp-3-5">{"3-5 "}{t("experience.years")}</label>
+                    <label htmlFor="exp-3-5">{"3-5 "}{t("experience.years")}</label><br/>
                     <Radio type={"radio"} name={"experience"} value={"5"} id={"exp-5"} required/>
                     <label htmlFor="exp-5">{"5+ "}{t("experience.years")}</label>
                 </div>
@@ -81,7 +85,6 @@ const ContactForm: FC<Props> = () => {
                     </Submit>
                 </ButtonWrapper>
             </FormContainer>
-
         </div>
     );
 };

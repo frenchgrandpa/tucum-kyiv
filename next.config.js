@@ -3,8 +3,8 @@ module.exports = {
         outputStandalone: true
     },
     i18n: {
-        locales: ["en", "uk", "ru"],
-        defaultLocale: "en"
+        locales: ["uk", "ru", "en"],
+        defaultLocale: "uk"
     },
     typescript: {
         tsconfigPath: "./tsconfig.json"

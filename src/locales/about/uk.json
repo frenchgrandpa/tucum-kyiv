@@ -1,0 +1,31 @@
+{
+  "about": {
+    "what": {
+      "title": "What Is Capoeira",
+      "text": "Capoeira is a Brazilian martial art disguised as a dance and performed to musical instruments and traditional Brazilian songs. It is comprised of specific offensive and defensive movements and, unlike in other martial arts, the participant is constantly in motion because of the basic movement, the ginga."
+    },
+    "team": {
+      "title": "Our Tucum Crew",
+      "text": "<p>Founded in 2021 by Mestre Papa Leguas, capoeira Tucum school has spreaded out across Europe and Latin America.</p><p>The name of the school “Tucum” comes from the Tupi language and means “a needle for sewing”.</p><p>Besides the founder of the school and his community, we also happen to have a Tucum capoeira school in Kyiv! Currently, we are with the team of 5 trainers and we keep growing and expanding.</p><p>Besides our regular trainings, we organise seminars, workshops and summer camps which are fun both for kids & adults.</p><p>Join our capoeira family!</p>"
+    },
+    "suitable": {
+      "title": "Suitable for both beginners & intermediate",
+      "text": "Capoeira has been proven to improve the level of flexibility, coordination and strength of those who practice it. Moreover, capoeira is great for MMA because it builds fighter's strategy, physical capabilities, and game plan. There where many Capoeira fighters in the MMA world, and even some of the best fighters in UFC where training Capoeira in some part of their life."
+    },
+    "testimonials": {
+      "title": "What other students say",
+      "t1": {
+        "text": "“Great location, great price and great, helpful people. What to want more?”",
+        "name": "Mark A."
+      },
+      "t2": {
+        "text": "“Capoeira changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”",
+        "name": "Lauren K."
+      },
+      "t3": {
+        "text": "“Love these workouts! Trainers are knowledgeable and motivating. Tucum is wonderful!”",
+        "name": "John D."
+      }
+    }
+  }
+}

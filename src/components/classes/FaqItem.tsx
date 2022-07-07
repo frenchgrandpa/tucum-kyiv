@@ -1,4 +1,4 @@
-import {FC, useState, useEffect} from "react";
+import {FC} from "react";
 import styled from "@emotion/styled";
 
 
@@ -11,7 +11,7 @@ interface Props {
 const Container = styled.div`
   background: #FFFFFF;
   border: 1px solid #23343C;
-  box-shadow: 0px 20px 40px rgba(141, 147, 201, 0.08);
+  box-shadow: 0 20px 40px rgba(141, 147, 201, 0.08);
   border-radius: 10px;
   padding: 32px;
 `;

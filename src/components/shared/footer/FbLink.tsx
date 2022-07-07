@@ -1,4 +1,4 @@
-import {FC, useState, useEffect} from "react";
+import {FC} from "react";
 import styled from "@emotion/styled";
 import {FaFacebook} from "react-icons/fa";
 

@@ -1,11 +1,4 @@
-import {FC, useState, useEffect} from "react";
 import styled from "@emotion/styled";
-
-
-interface Props {
-
-}
-
 
 const SectionTitle = styled.div`
   font-family: var(--title-font);

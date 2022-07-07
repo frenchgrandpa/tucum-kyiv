@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import {FC, useEffect, useState} from "react";
+import {FC} from "react";
 import {FaArrowDown} from "react-icons/fa";
 import PreTitle from "@s/PreTitle";
 import { useTranslations } from "next-intl";

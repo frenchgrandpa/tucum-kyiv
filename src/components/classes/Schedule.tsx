@@ -1,10 +1,7 @@
-import {FC, useState, useEffect} from "react";
+import {FC} from "react";
 import styled from "@emotion/styled";
 import SectionTitle from "@s/section/SectionTitle";
-import SectionText from "@s/section/SectionText";
-import suitable from "@i/about/suitable.jpg";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Day from "@c/classes/Day";
 
 

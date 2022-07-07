@@ -1,7 +1,5 @@
 import {FC} from "react";
 import styled from "@emotion/styled";
-import Logo from "@s/header/logo";
-import {useTranslations} from "next-intl";
 import NavItems from "@s/header/NavItems";
 import HideOnMobile from "@s/layout/HideOnMobile";
 

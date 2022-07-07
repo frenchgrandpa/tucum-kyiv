@@ -1,5 +1,4 @@
-import {FC, useState, useEffect} from "react";
-import styled from "@emotion/styled";
+import {FC} from "react";
 import {Spacer} from "@s/layout/Spacer";
 import Content from "@s/layout/Content";
 import ContactForm from "@s/contactForm/ContactForm";

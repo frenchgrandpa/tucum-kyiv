@@ -1,5 +1,4 @@
-import {FC, useState, useEffect, createContext} from "react";
-import styled from "@emotion/styled";
+import {FC, useState, createContext} from "react";
 
 
 interface Props {

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import {FC, useEffect, useState} from "react";
+import {FC} from "react";
 import Image from "next/image";
 
 import img from "@i/logo.png";

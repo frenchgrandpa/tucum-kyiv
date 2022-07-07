@@ -1,7 +1,6 @@
-import {FC, useState, useEffect, createContext, useContext} from "react";
+import {FC, useContext} from "react";
 import styled from "@emotion/styled";
 import {MobileMenuContext} from "@s/MobileMenuContextProvider";
-import {useTranslations} from "next-intl";
 import NavItems from "@s/header/NavItems";
 
 

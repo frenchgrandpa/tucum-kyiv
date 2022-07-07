@@ -1,4 +1,4 @@
-import {FC, useState, useEffect} from "react";
+import {FC} from "react";
 import styled from "@emotion/styled";
 import dayjs from "dayjs";
 import Group, {GroupData} from "@c/classes/Group";

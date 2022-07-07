@@ -1,10 +1,8 @@
-import {FC, useState, useEffect} from "react";
+import {FC} from "react";
 import styled from "@emotion/styled";
 import SectionTitle from "@s/section/SectionTitle";
-import FaqItem from "@c/classes/FaqItem";
 import {useTranslations} from "next-intl";
 import FormInput, {Label} from "@s/contactForm/FormInput";
-import axios from "axios";
 
 
 interface Props {

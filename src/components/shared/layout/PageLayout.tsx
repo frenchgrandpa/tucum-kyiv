@@ -4,7 +4,6 @@ import Hero from "@s/Hero";
 import Main from "@s/layout/Main";
 import Content from "@s/layout/Content";
 import Header from "@s/header/Header";
-import MobileMenu from "../MobileMenu";
 import MobileMenuContextProvider from "@s/MobileMenuContextProvider";
 import Footer from "../footer/Footer";
 

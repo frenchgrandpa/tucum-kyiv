@@ -1,10 +1,8 @@
-import {FC, useState, useEffect} from "react";
+import {FC} from "react";
 import styled from "@emotion/styled";
 import Content from "@s/layout/Content";
-import SectionText from "@s/section/SectionText";
 import FooterItem from "@s/footer/FooterItem";
 import {useTranslations} from "next-intl";
-import NavItems from "@s/header/NavItems";
 import Link from "next/link";
 import FbLink from "@s/footer/FbLink";
 

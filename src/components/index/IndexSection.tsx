@@ -1,4 +1,4 @@
-import {FC, useState, useEffect} from "react";
+import {FC} from "react";
 import styled from "@emotion/styled";
 import Section from "@s/section/Section";
 import {StaticImageData} from "next/image";

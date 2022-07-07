@@ -1,8 +1,7 @@
-import {FC, useState, useEffect} from "react";
+import {FC} from "react";
 import styled from "@emotion/styled";
 import {useTranslations} from "next-intl";
 import SectionTitle from "@s/section/SectionTitle";
-import SectionText from "@s/section/SectionText";
 import Image from "next/image";
 
 import t1 from "@i/about/testomonials/testimonial1.jpg";

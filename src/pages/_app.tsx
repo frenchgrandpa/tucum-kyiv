@@ -10,8 +10,7 @@ export default function App({Component, pageProps}: AppProps) {
         <>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-                <title>Title</title>
-                {/*    TODO set title*/}
+                <title>Tucum Kyiv</title>
             </Head>
             <I18nProvider locales={pageProps.locales}>
                 <ThemeProvider>

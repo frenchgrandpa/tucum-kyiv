@@ -19,7 +19,6 @@ const Container = styled.div`
 `;
 
 const MobileMenu: FC<Props> = () => {
-    const t = useTranslations("shared.nav");
     const {show} = useContext(MobileMenuContext);
 
     if (!show) {
